@@ -1,0 +1,361 @@
+
+/* ------------------------RESETEO DE CSS------------------------ */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+   color: white;
+}
+ul {
+   list-style: none;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+}
+img {
+   max-width: 100%;
+}
+ 
+a:hover {
+   color: #60ff7a;
+}
+a:active {
+   color: #b3fdbf;
+}
+.index-imagen:hover {
+   filter: invert(100%);
+}
+/* ------------------------HEADER------------------------ */
+
+h1 {
+   font-size: 30px;
+   font-weight: normal;
+}
+ header {
+    background-color: black;
+    height: 81px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+.contenedor-header {
+   display: flex;
+   flex-direction: column;
+   height: 61px;
+   justify-content: space-between;
+}
+.barra-de-navegacion {
+   text-align: center;
+   display: flex;
+   justify-content: space-between;
+   max-width: 610px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.barra-de-navegacion li {
+   font-size: 14px;
+   text-align: center;
+   font-weight: bold;
+}
+ .boton-busqueda {
+   display: none;
+}
+.boton-busqueda input {
+   border-radius: 7px;
+   border: 0;
+}
+.boton-busqueda input::placeholder {
+   color: black;
+   position: absolute;
+   left: 10px;
+}
+
+/* ------------------------MAIN------------------------ */
+
+.texto-introductorio {
+   padding: 1rem 10px;
+   font-size: medium;
+}
+
+.index-main {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.index-imagen {
+   height: auto;
+   max-width: 610px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.index-imagen img {
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.index-texto {
+   padding: 1rem 10px;
+}
+.que-hacemos {
+   font-size: 23px;
+}
+.index-titulo {
+   padding: 0.7rem 0;
+}
+
+.contato-main {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.iframe-mapa{
+   width: 100%;
+  object-fit: cover;
+}
+.main-texto {
+   order: 1;
+}
+.contacto-mapa {
+   order: 3;
+   padding: 10px 10px;
+}
+.contacto-formulario {
+   order: 2;
+   padding: 0 10px;
+   display: flex;
+   flex-direction: column;
+}
+.contacto-formulario div {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 8px;
+}
+.contacto-formulario div label {
+   font-size: medium;
+}
+.contacto-formulario div input {
+   font-size: small;
+   height: 25px;
+   padding: 3px;
+}
+.contacto-formulario div textarea {
+   font-size: small;
+   padding: 3px;
+   height: 300px;
+}
+.contacto-enviar {
+   width: 100px;
+   align-self: flex-end;
+}
+::placeholder {
+   font-family: Roboto, sans-serif;
+}
+
+.servicios-prestacion-contenedor {
+   padding: 10px;
+   font-size: small;
+}
+
+.trabajos-proyecto-contenedor {
+   padding: 10px;
+   font-size: small;
+}
+
+.clientes-logo-contenedor {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 30px;
+   grid-row-gap: 25px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+/* ------------------------FOOTER------------------------ */
+
+ footer {
+    background-color: black;
+    height: 175px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+.footer-listas {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 10px;
+}
+.footer-social li {
+   text-align: end;
+}
+.footer-titulo {
+   font-weight: bold;
+}
+.copiright {
+   width: 100%;
+   text-align: end;
+   padding: 10px;
+   font-size: 10px;
+}
+
+/* ------------------MEDIA QUERI DESCKTOP----------------- */
+
+
+@media screen and (min-width: 1200px) {
+
+.contenedor-maximo-desktop {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+   background-color: black;
+   height: 51px;
+   color: white;
+   padding-top: 0;
+   padding-left: 0;
+   padding-right: 0;
+}
+.contenedor-header {
+   height: 51px;
+   display: grid;
+   grid-template-columns: 1fr 423px 187px;
+   align-items: center;
+}
+.barra-de-navegacion {
+   text-align: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.barra-de-navegacion li {
+   font-size: 14px;
+   text-align: center;
+   font-weight: bold;
+}
+ .boton-busqueda{
+   display: inline-block;
+   margin-left: auto;
+ }
+
+/* MAIN */
+
+.texto-introductorio {
+   padding: 1rem 0;
+}
+
+.index-main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+}
+.index-texto {
+   padding: 2rem 10px;
+}
+.que-hacemos {
+   font-size: 30px;
+}
+.index-titulo {
+   font-size: 45px;
+   padding: 0.7rem 0;
+}
+
+.contato-main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.iframe-mapa{
+   width: 100%;
+   object-fit: cover;
+}
+.main-texto {
+   order: 1;
+   grid-column: span 2;
+}
+.contacto-mapa {
+   order: 2;
+   padding: 10px 0;
+}
+.contacto-formulario {
+   order: 3;
+   padding: 10px 0;
+   margin-left: 50px;
+   margin-right: 50px;
+
+}
+.contacto-formulario div textarea {
+   height: 450px;
+}
+
+.servicios-prestacion-contenedor {
+   padding: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin: 10px 0;
+   align-items: center;
+}
+.servicios-prestacion-parrafo {
+   padding-left: 10px;
+}
+
+.trabajos-proyecto-contenedor {
+   padding: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin: 10px 0;
+   align-items: center;
+   border: 1px solid black;
+}
+.trabajos-proyecto-parrafo {
+   padding-left: 10px;
+}
+/* .servicios-prestacion-img {
+} */
+
+.clientes-logo-contenedor {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-column-gap: 100px;
+   grid-row-gap: 50px;
+   margin-left: 0;
+   margin-right: 0;
+   padding-bottom: 50px;
+   padding-top: 50px;
+}
+
+
+/* FOOTER */
+
+footer {
+display: block;
+}
+.footer-listas {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   padding: 10px 0;
+}
+.footer-social li {
+   text-align: left;
+}
+.footer-info {
+   width: 305px;
+}
+.footer-social {
+   width: 305px;
+}
+.copiright {
+   width: 100%;
+   text-align: left;
+   padding: 0;
+   font-size: 10px;
+}
+}
+
