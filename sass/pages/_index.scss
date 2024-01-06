@@ -1,0 +1,55 @@
+.index-main {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+
+.index-imagen {
+   height: auto;
+   max-width: 610px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.index-imagen img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.index-texto {
+   padding: 1rem 10px;
+}
+
+.index-texto p {
+   margin-bottom: 5px;
+}
+
+.que-hacemos {
+   font-size: 23px;
+}
+
+.index-titulo {
+   padding: 0.7rem 0;
+}
+
+// MEDIA QUERI DESCKTOP
+@media screen and (min-width: 1200px) {
+   .index-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+   }
+
+   .index-texto {
+      padding: 2rem 10px;
+   }
+
+   .que-hacemos {
+      font-size: 30px;
+   }
+
+   .index-titulo {
+      font-size: 45px;
+      padding: 0.7rem 0;
+   }
+}

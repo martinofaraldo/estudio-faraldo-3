@@ -1,0 +1,87 @@
+h1 {
+   font-size: 30px;
+   font-weight: normal;
+}
+
+header {
+   background-color: black;
+   height: 81px;
+   color: white;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.contenedor-header {
+   display: flex;
+   flex-direction: column;
+   height: 61px;
+   justify-content: space-between;
+}
+
+.barra-de-navegacion {
+   text-align: center;
+   display: flex;
+   justify-content: space-between;
+   max-width: 610px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.barra-de-navegacion li {
+   font-size: 14px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.boton-busqueda {
+   display: none;
+}
+
+.boton-busqueda input {
+   border-radius: 7px;
+   border: 0;
+}
+
+.boton-busqueda input::placeholder {
+   color: black;
+   position: absolute;
+   left: 10px;
+}
+
+// MEDIA QUERI DESCKTOP
+@media screen and (min-width: 1200px) {
+   header {
+      background-color: black;
+      height: 51px;
+      color: white;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+   }
+
+   .contenedor-header {
+      height: 51px;
+      display: grid;
+      grid-template-columns: 1fr 423px 187px;
+      align-items: center;
+   }
+
+   .barra-de-navegacion {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .barra-de-navegacion li {
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold;
+   }
+
+   .boton-busqueda {
+      display: inline-block;
+      margin-left: auto;
+   }
+}

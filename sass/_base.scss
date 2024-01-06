@@ -1,0 +1,61 @@
+// RECETEO DE CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ a {
+    text-decoration: none;
+    color: white;
+ }
+
+ ul {
+    list-style: none;
+ }
+
+ body {
+    font-family: 'Roboto', sans-serif;
+ }
+
+ img {
+    max-width: 100%;
+ }
+
+ // DECORACION
+
+ a:hover {
+    color: #60ff7a;
+ }
+
+ a:active {
+    color: #b3fdbf;
+ }
+
+ .index-imagen:hover {
+    filter: invert(100%);
+ }
+
+// GENERAL
+
+ .texto-introductorio {
+   padding: 1rem 10px;
+   font-size: medium;
+}
+
+
+
+
+// MEDIA QUERI DESCKTOP
+@media screen and (min-width: 1200px) {
+   .texto-introductorio {
+      padding: 1rem 0;
+   }
+   
+   .contenedor-maximo-desktop {
+      max-width: 1220px;
+      margin: 0 auto;
+   }
+
+}

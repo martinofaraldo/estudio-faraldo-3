@@ -1,0 +1,22 @@
+.clientes-logo-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+// MEDIA QUERI DESCKTOP
+@media screen and (min-width: 1200px) {
+    .clientes-logo-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 100px;
+        grid-row-gap: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}

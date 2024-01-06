@@ -1,0 +1,19 @@
+.servicios-prestacion-contenedor {
+    padding: 10px;
+    font-size: small;
+}
+
+// MEDIA QUERI DESCKTOP
+@media screen and (min-width: 1200px) {
+    .servicios-prestacion-contenedor {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 0;
+        align-items: center;
+    }
+
+    .servicios-prestacion-parrafo {
+        padding-left: 10px;
+    }
+}
