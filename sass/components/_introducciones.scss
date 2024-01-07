@@ -1,0 +1,21 @@
+.texto-introductorio {
+    padding: 1rem 10px;
+}
+
+.texto-introductorio p {
+    font-family: $fuente-mono;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.texto-introductorio h2 {
+    font-family: $fuente-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1200px) {
+    .texto-introductorio {
+        padding: 1rem 0;
+     }
+}

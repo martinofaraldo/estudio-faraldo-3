@@ -13,37 +13,20 @@ ul {
   list-style: none;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 img {
   max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke;
 }
 
 main {
   margin-top: 81px;
 }
 
-.texto-introductorio {
-  padding: 1rem 10px;
-}
-
-.texto-introductorio p {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.texto-introductorio h2 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
 @media screen and (min-width: 1200px) {
-  .texto-introductorio {
-    padding: 1rem 0;
-  }
   main {
     margin-top: 51px;
   }
@@ -66,7 +49,7 @@ h1 {
 }
 
 header {
-  background-color: black;
+  background-color: #161616;
   height: 81px;
   color: white;
   padding-top: 10px;
@@ -107,14 +90,14 @@ header {
 }
 
 .boton-busqueda input::placeholder {
-  color: black;
+  color: #161616;
   position: absolute;
   left: 10px;
 }
 
 @media screen and (min-width: 1200px) {
   header {
-    background-color: black;
+    background-color: #161616;
     height: 51px;
     padding-top: 0;
     padding-left: 0;
@@ -142,7 +125,7 @@ header {
   }
 }
 footer {
-  background-color: black;
+  background-color: #161616;
   height: 175px;
   color: white;
   font-size: 0.9rem;
@@ -201,6 +184,39 @@ footer {
     font-size: 10px;
   }
 }
+.texto-introductorio {
+  padding: 1rem 10px;
+}
+
+.texto-introductorio p {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.texto-introductorio h2 {
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1200px) {
+  .texto-introductorio {
+    padding: 1rem 0;
+  }
+}
+a:hover {
+  color: #60ff7a;
+}
+
+a:active {
+  color: #b3fdbf;
+}
+
+.index-imagen:hover {
+  filter: invert(100%);
+}
+
 .index-main {
   display: grid;
   grid-template-columns: 1fr;
@@ -211,7 +227,6 @@ footer {
   max-width: 610px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4px;
 }
 
 .index-imagen img {
@@ -222,12 +237,12 @@ footer {
 
 .index-texto {
   padding: 1rem 10px;
-  font-family: "Roboto Serif", serif;
+  font-family: "Roboto Serif", sans-serif;
 }
 
 .index-texto p {
   margin-bottom: 5px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", sans-serif;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -254,16 +269,24 @@ footer {
   .index-titulo {
     padding: 0.7rem 0;
   }
+  .index-imagen {
+    margin-top: 4px;
+  }
+  .index-imagen img {
+    border: 0px solid #161616;
+    border-radius: 5px;
+    overflow: hidden;
+  }
 }
 .servicios-prestacion-parrafo p {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 0.9rem;
 }
 
 .servicios-prestacion-parrafo h3 {
-  font-family: "Roboto Serif", serif;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .servicios-prestacion-contenedor {
@@ -273,14 +296,19 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .servicios-prestacion-contenedor {
+    background-color: white;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px 0;
     align-items: center;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    overflow: hidden;
   }
   .servicios-prestacion-parrafo {
     padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .trabajos-proyecto-contenedor {
@@ -289,27 +317,31 @@ footer {
 }
 
 .trabajos-proyecto-parrafo h3 {
-  font-family: "Roboto Serif", serif;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .trabajos-proyecto-parrafo p {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 0.9rem;
 }
 
 @media screen and (min-width: 1200px) {
   .trabajos-proyecto-contenedor {
+    background-color: white;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px 0;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    overflow: hidden;
   }
   .trabajos-proyecto-parrafo {
     padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .clientes-logo-contenedor {
@@ -398,6 +430,9 @@ footer {
   .iframe-mapa {
     width: 100%;
     object-fit: cover;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    overflow: hidden;
   }
   .main-texto {
     order: 1;

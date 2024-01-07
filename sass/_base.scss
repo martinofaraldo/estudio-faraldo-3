@@ -1,12 +1,12 @@
-$color-primario: black;
+$color-primario: #161616;
 $color-secundario: #60ff7a;
 $color-terciario: #b3fdbf;
 $color-texto-primario: black;
 $color-texto-secundario: white;
 
 $fuente-principal: 'Roboto', sans-serif;
-$fuente-mono: 'Roboto Mono', monospace;
-$fuente-serif: 'Roboto Serif', serif;
+$fuente-mono: 'Roboto Mono', sans-serif;
+$fuente-serif: 'Roboto Serif', sans-serif;
 $fuente-flex: 'Roboto Flex', sans-serif;
 
 // RECETEO DE CSS
@@ -26,41 +26,25 @@ ul {
    list-style: none;
 }
 
-body {
-   font-family: $fuente-principal;
-}
-
 img {
    max-width: 100%;
 }
 
+
 // GENERAL
+body {
+   font-family: $fuente-principal;
+   background-color: whitesmoke;
+}
 
 main {
    margin-top: 81px;
 }
 
-.texto-introductorio {
-   padding: 1rem 10px;
-}
 
-.texto-introductorio p {
-   font-family: $fuente-mono;
-   font-size: 1rem;
-   font-weight: 500;
-}
-
-.texto-introductorio h2 {
-   font-size: 1rem;
-   font-weight: 600;
-}
 
 // MEDIA QUERI DESCKTOP
 @media screen and (min-width: 1200px) {
-  .texto-introductorio {
-          padding: 1rem 0;
-       }
-
    main {
       margin-top: 51px;
    }

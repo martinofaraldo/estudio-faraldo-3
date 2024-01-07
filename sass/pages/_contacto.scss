@@ -1,70 +1,73 @@
 .contato-main {
-    display: grid;
-    grid-template-columns: 1fr;
- }
+   display: grid;
+   grid-template-columns: 1fr;
+}
 
- .iframe-mapa{
-    width: 100%;
+.iframe-mapa {
+   width: 100%;
    object-fit: cover;
- }
+}
 
- .main-texto {
-    order: 1;
- }
+.main-texto {
+   order: 1;
+}
 
- .contacto-mapa {
-    order: 3;
-    padding: 10px 10px;
- }
+.contacto-mapa {
+   order: 3;
+   padding: 10px 10px;
+}
 
- .contacto-formulario {
-    order: 2;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
- }
+.contacto-formulario {
+   order: 2;
+   padding: 0 10px;
+   display: flex;
+   flex-direction: column;
+}
 
- .contacto-formulario div {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 8px;
- }
+.contacto-formulario div {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 8px;
+}
 
- .contacto-formulario div label {
-    font-size: medium;
- }
+.contacto-formulario div label {
+   font-size: medium;
+}
 
- .contacto-formulario div input {
-    font-size: small;
-    height: 25px;
-    padding: 3px;
- }
+.contacto-formulario div input {
+   font-size: small;
+   height: 25px;
+   padding: 3px;
+}
 
- .contacto-formulario div textarea {
-    font-size: small;
-    padding: 3px;
-    height: 300px;
- }
+.contacto-formulario div textarea {
+   font-size: small;
+   padding: 3px;
+   height: 300px;
+}
 
- .contacto-enviar {
-    width: 100px;
-    align-self: flex-end;
- }
- 
- ::placeholder {
-    font-family: Roboto, sans-serif;
- }
+.contacto-enviar {
+   width: 100px;
+   align-self: flex-end;
+}
 
- // MEDIA QUERI DESCKTOP
- @media screen and (min-width: 1200px) {
+::placeholder {
+   font-family: Roboto, sans-serif;
+}
+
+// MEDIA QUERI DESCKTOP
+@media screen and (min-width: 1200px) {
    .contato-main {
       display: grid;
       grid-template-columns: 1fr 1fr;
    }
 
-   .iframe-mapa{
+   .iframe-mapa {
       width: 100%;
       object-fit: cover;
+      border: 1px solid $color-primario;
+      border-radius: 5px;
+      overflow: hidden;
    }
 
    .main-texto {
@@ -82,10 +85,10 @@
       padding: 10px 0;
       margin-left: 50px;
       margin-right: 50px;
-   
+
    }
-   
+
    .contacto-formulario div textarea {
       height: 450px;
    }
- }
+}
