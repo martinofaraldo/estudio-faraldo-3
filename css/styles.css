@@ -21,35 +21,48 @@ img {
   max-width: 100%;
 }
 
-a:hover {
-  color: #60ff7a;
-}
-
-a:active {
-  color: #b3fdbf;
-}
-
-.index-imagen:hover {
-  filter: invert(100%);
+main {
+  margin-top: 81px;
 }
 
 .texto-introductorio {
   padding: 1rem 10px;
-  font-size: medium;
+}
+
+.texto-introductorio p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.texto-introductorio h2 {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 1200px) {
   .texto-introductorio {
     padding: 1rem 0;
   }
+  main {
+    margin-top: 51px;
+  }
   .contenedor-maximo-desktop {
     max-width: 1220px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 h1 {
-  font-size: 30px;
-  font-weight: normal;
+  font-size: 27px;
+  font-weight: 300;
 }
 
 header {
@@ -78,7 +91,8 @@ header {
 }
 
 .barra-de-navegacion li {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
   text-align: center;
   font-weight: bold;
 }
@@ -102,7 +116,6 @@ header {
   header {
     background-color: black;
     height: 51px;
-    color: white;
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
@@ -120,9 +133,8 @@ header {
     align-items: center;
   }
   .barra-de-navegacion li {
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
-    font-weight: bold;
   }
   .boton-busqueda {
     display: inline-block;
@@ -133,7 +145,8 @@ footer {
   background-color: black;
   height: 175px;
   color: white;
-  font-size: 14px;
+  font-size: 0.9rem;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -159,6 +172,7 @@ footer {
   text-align: end;
   padding: 10px;
   font-size: 10px;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 1200px) {
@@ -197,6 +211,7 @@ footer {
   max-width: 610px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4px;
 }
 
 .index-imagen img {
@@ -207,18 +222,24 @@ footer {
 
 .index-texto {
   padding: 1rem 10px;
+  font-family: "Roboto Serif", serif;
 }
 
 .index-texto p {
   margin-bottom: 5px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .que-hacemos {
-  font-size: 23px;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .index-titulo {
   padding: 0.7rem 0;
+  font-size: 2.5rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -230,14 +251,21 @@ footer {
   .index-texto {
     padding: 2rem 10px;
   }
-  .que-hacemos {
-    font-size: 30px;
-  }
   .index-titulo {
-    font-size: 45px;
     padding: 0.7rem 0;
   }
 }
+.servicios-prestacion-parrafo p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+}
+
+.servicios-prestacion-parrafo h3 {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 .servicios-prestacion-contenedor {
   padding: 10px;
   font-size: small;
@@ -258,6 +286,17 @@ footer {
 .trabajos-proyecto-contenedor {
   padding: 10px;
   font-size: small;
+}
+
+.trabajos-proyecto-parrafo h3 {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.trabajos-proyecto-parrafo p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 1200px) {

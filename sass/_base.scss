@@ -1,61 +1,74 @@
+$color-primario: black;
+$color-secundario: #60ff7a;
+$color-terciario: #b3fdbf;
+$color-texto-primario: black;
+$color-texto-secundario: white;
+
+$fuente-principal: 'Roboto', sans-serif;
+$fuente-mono: 'Roboto Mono', monospace;
+$fuente-serif: 'Roboto Serif', serif;
+$fuente-flex: 'Roboto Flex', sans-serif;
+
 // RECETEO DE CSS
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
- a {
-    text-decoration: none;
-    color: white;
- }
+a {
+   text-decoration: none;
+   color: $color-texto-secundario;
+}
 
- ul {
-    list-style: none;
- }
+ul {
+   list-style: none;
+}
 
- body {
-    font-family: 'Roboto', sans-serif;
- }
+body {
+   font-family: $fuente-principal;
+}
 
- img {
-    max-width: 100%;
- }
-
- // DECORACION
-
- a:hover {
-    color: #60ff7a;
- }
-
- a:active {
-    color: #b3fdbf;
- }
-
- .index-imagen:hover {
-    filter: invert(100%);
- }
+img {
+   max-width: 100%;
+}
 
 // GENERAL
 
- .texto-introductorio {
-   padding: 1rem 10px;
-   font-size: medium;
+main {
+   margin-top: 81px;
 }
 
+.texto-introductorio {
+   padding: 1rem 10px;
+}
 
+.texto-introductorio p {
+   font-family: $fuente-mono;
+   font-size: 1rem;
+   font-weight: 500;
+}
 
+.texto-introductorio h2 {
+   font-size: 1rem;
+   font-weight: 600;
+}
 
 // MEDIA QUERI DESCKTOP
 @media screen and (min-width: 1200px) {
-   .texto-introductorio {
-      padding: 1rem 0;
+  .texto-introductorio {
+          padding: 1rem 0;
+       }
+
+   main {
+      margin-top: 51px;
    }
-   
+
    .contenedor-maximo-desktop {
       max-width: 1220px;
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
    }
 
 }

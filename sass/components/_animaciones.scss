@@ -1,0 +1,11 @@
+a:hover {
+    color: $color-secundario;
+}
+
+a:active {
+    color: $color-terciario;
+}
+
+.index-imagen:hover {
+    filter: invert(100%);
+}

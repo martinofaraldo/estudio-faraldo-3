@@ -8,6 +8,7 @@
    max-width: 610px;
    margin-left: auto;
    margin-right: auto;
+   margin-top: 4px;
 }
 
 .index-imagen img {
@@ -18,18 +19,24 @@
 
 .index-texto {
    padding: 1rem 10px;
+   font-family: $fuente-serif;
 }
 
 .index-texto p {
    margin-bottom: 5px;
+   font-family: $fuente-mono;
+   font-size: 1rem;
+   font-weight: 500;
 }
 
 .que-hacemos {
-   font-size: 23px;
+   font-size: 1.5rem;
+   font-weight: 500;
 }
 
 .index-titulo {
    padding: 0.7rem 0;
+   font-size: 2.5rem;
 }
 
 // MEDIA QUERI DESCKTOP
@@ -44,12 +51,7 @@
       padding: 2rem 10px;
    }
 
-   .que-hacemos {
-      font-size: 30px;
-   }
-
    .index-titulo {
-      font-size: 45px;
       padding: 0.7rem 0;
    }
 }

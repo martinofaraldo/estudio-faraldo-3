@@ -1,12 +1,19 @@
+header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000;
+}
+
 h1 {
-   font-size: 30px;
-   font-weight: normal;
+   font-size: 27px;
+   font-weight:300;
 }
 
 header {
-   background-color: black;
+   background-color: $color-primario;
    height: 81px;
-   color: white;
+   color: $color-texto-secundario;
    padding-top: 10px;
    padding-left: 10px;
    padding-right: 10px;
@@ -29,7 +36,8 @@ header {
 }
 
 .barra-de-navegacion li {
-   font-size: 14px;
+   font-size: 13px;
+   font-weight: 600;
    text-align: center;
    font-weight: bold;
 }
@@ -44,7 +52,7 @@ header {
 }
 
 .boton-busqueda input::placeholder {
-   color: black;
+   color: $color-primario;
    position: absolute;
    left: 10px;
 }
@@ -52,9 +60,8 @@ header {
 // MEDIA QUERI DESCKTOP
 @media screen and (min-width: 1200px) {
    header {
-      background-color: black;
+      background-color: $color-primario;
       height: 51px;
-      color: white;
       padding-top: 0;
       padding-left: 0;
       padding-right: 0;
@@ -75,9 +82,8 @@ header {
    }
 
    .barra-de-navegacion li {
-      font-size: 14px;
+      font-size: 15px;
       text-align: center;
-      font-weight: bold;
    }
 
    .boton-busqueda {
