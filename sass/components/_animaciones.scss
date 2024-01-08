@@ -1,11 +1,22 @@
+// NAVEGACION
 a:hover {
-    color: $color-secundario;
+    text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.500), 0px -4px 6px rgb(255, 255, 255, 0.600);
+}
+
+a {
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 a:active {
-    color: $color-terciario;
+    font-weight: 100;
+    text-shadow: 0 0 0;
 }
 
-.index-imagen:hover {
+// IMAGEN INDEX
+.index-imagen img:hover {
     filter: invert(100%);
+    transform: rotatey(540deg) rotate(180deg);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }

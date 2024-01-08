@@ -19,7 +19,8 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: whitesmoke;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 20%, rgb(206, 205, 205) 100%);
 }
 
 main {
@@ -49,7 +50,7 @@ h1 {
 }
 
 header {
-  background-color: #161616;
+  background-color: black;
   height: 81px;
   color: white;
   padding-top: 10px;
@@ -97,7 +98,8 @@ header {
 
 @media screen and (min-width: 1200px) {
   header {
-    background-color: #161616;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(28, 28, 28) 100%);
     height: 51px;
     padding-top: 0;
     padding-left: 0;
@@ -125,7 +127,7 @@ header {
   }
 }
 footer {
-  background-color: #161616;
+  background-color: black;
   height: 175px;
   color: white;
   font-size: 0.9rem;
@@ -133,6 +135,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  z-index: 1001;
 }
 
 .footer-listas {
@@ -161,6 +165,8 @@ footer {
 @media screen and (min-width: 1200px) {
   footer {
     display: block;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(28, 28, 28) 100%);
   }
   .footer-listas {
     display: flex;
@@ -192,9 +198,11 @@ footer {
   font-family: "Roboto Mono", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+  color: rgb(34, 34, 34);
 }
 
 .texto-introductorio h2 {
+  text-shadow: 5px 5px 10px rgb(207, 207, 207);
   font-family: "Roboto Serif", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
@@ -206,15 +214,24 @@ footer {
   }
 }
 a:hover {
-  color: #60ff7a;
+  text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.5), 0px -4px 6px rgba(255, 255, 255, 0.6);
+}
+
+a {
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 a:active {
-  color: #b3fdbf;
+  font-weight: 100;
+  text-shadow: 0 0 0;
 }
 
-.index-imagen:hover {
+.index-imagen img:hover {
   filter: invert(100%);
+  transform: rotatey(540deg) rotate(180deg);
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
 }
 
 .index-main {
@@ -241,20 +258,23 @@ a:active {
 }
 
 .index-texto p {
-  margin-bottom: 5px;
+  margin: 1rem 0;
   font-family: "Roboto Mono", sans-serif;
   font-size: 1rem;
   font-weight: 500;
 }
 
 .que-hacemos {
+  padding: 1rem 0;
+  font-family: "Roboto Mono", sans-serif;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .index-titulo {
-  padding: 0.7rem 0;
+  padding: 1rem 0;
   font-size: 2.5rem;
+  text-shadow: 5px 5px 12px rgb(207, 207, 207);
 }
 
 @media screen and (min-width: 1200px) {
@@ -263,12 +283,6 @@ a:active {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-  .index-texto {
-    padding: 2rem 10px;
-  }
-  .index-titulo {
-    padding: 0.7rem 0;
-  }
   .index-imagen {
     margin-top: 4px;
   }
@@ -276,6 +290,7 @@ a:active {
     border: 0px solid #161616;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: -4px 2px 20px rgba(0, 0, 0, 0.223);
   }
 }
 .servicios-prestacion-parrafo p {
@@ -290,6 +305,7 @@ a:active {
 }
 
 .servicios-prestacion-contenedor {
+  margin: 10px 0;
   padding: 10px;
   font-size: small;
 }
@@ -298,22 +314,24 @@ a:active {
   .servicios-prestacion-contenedor {
     background-color: white;
     padding: 0;
+    margin: 20px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 10px 0;
-    align-items: center;
     border: 1px solid #161616;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: -3px 3px 10px 5px rgb(213, 213, 213);
   }
   .servicios-prestacion-parrafo {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 3rem;
+    margin-top: 3rem;
   }
 }
 .trabajos-proyecto-contenedor {
   padding: 10px;
   font-size: small;
+  margin: 10px 0;
 }
 
 .trabajos-proyecto-parrafo h3 {
@@ -329,15 +347,17 @@ a:active {
 
 @media screen and (min-width: 1200px) {
   .trabajos-proyecto-contenedor {
-    background-color: white;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(212, 212, 212, 0.5) 67%, rgb(255, 255, 255) 100%);
     padding: 0;
+    margin: 20px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 10px 0;
     align-items: center;
-    border: 1px solid #161616;
+    border: 0px solid #161616;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: -3px 3px 10px 5px rgb(213, 213, 213);
   }
   .trabajos-proyecto-parrafo {
     padding-left: 10px;
@@ -351,6 +371,10 @@ a:active {
   grid-row-gap: 25px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.clientes-logo-contenedor li {
+  filter: grayscale(1) brightness(0.8) contrast(1.7) drop-shadow(3px 4px 2px rgb(47, 47, 47));
 }
 
 @media screen and (min-width: 1200px) {

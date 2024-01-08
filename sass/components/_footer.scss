@@ -1,5 +1,5 @@
 footer {
-   background-color: $color-primario;
+   background-color: black;
    height: 175px;
    color: $color-texto-secundario;
    font-size: 0.9rem;
@@ -7,6 +7,8 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   position: relative;
+    z-index: 1001;
 }
 
 .footer-listas {
@@ -36,6 +38,8 @@ footer {
 @media screen and (min-width: 1200px) {
    footer {
       display: block;
+      background: rgb(0, 0, 0);
+   background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(28, 28, 28, 1) 100%);
    }
 
    .footer-listas {

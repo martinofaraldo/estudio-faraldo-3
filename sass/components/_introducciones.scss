@@ -6,9 +6,11 @@
     font-family: $fuente-mono;
     font-size: 1rem;
     font-weight: 500;
+    color: rgb(34, 34, 34);
 }
 
 .texto-introductorio h2 {
+    text-shadow: 5px 5px 10px rgb(207, 207, 207);
     font-family: $fuente-serif;
     font-size: 1.8rem;
     font-weight: 600;

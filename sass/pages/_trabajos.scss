@@ -1,6 +1,7 @@
 .trabajos-proyecto-contenedor {
     padding: 10px;
     font-size: small;
+    margin: 10px 0;
 }
 
 .trabajos-proyecto-parrafo h3 {
@@ -18,15 +19,17 @@
 // MEDIA QUERI DESCKTOP
 @media screen and (min-width: 1200px) {
     .trabajos-proyecto-contenedor {
-        background-color: white;
+        background: rgb(255,255,255);
+        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(212,212,212,0.5) 67%, rgba(255,255,255,1) 100%);
         padding: 0;
+        margin: 20px 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 10px 0;
         align-items: center;
-        border: 1px solid $color-primario;
+        border: 0px solid $color-primario;
         border-radius: 5px;
         overflow: hidden;
+        box-shadow: -3px 3px 10px 5px rgb(213, 213, 213);
     }
 
     .trabajos-proyecto-parrafo {

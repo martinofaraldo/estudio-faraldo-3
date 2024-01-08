@@ -9,6 +9,8 @@ $fuente-mono: 'Roboto Mono', sans-serif;
 $fuente-serif: 'Roboto Serif', sans-serif;
 $fuente-flex: 'Roboto Flex', sans-serif;
 
+
+
 // RECETEO DE CSS
 
 * {
@@ -34,7 +36,8 @@ img {
 // GENERAL
 body {
    font-family: $fuente-principal;
-   background-color: whitesmoke;
+   background: rgb(255, 255, 255);
+   background: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgb(206, 205, 205) 100%);
 }
 
 main {
