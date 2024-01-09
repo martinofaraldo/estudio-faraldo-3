@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap"
+        rel="stylesheet">
     <title>Estudio Faraldo</title>
-    <meta name="description" content="Somos un estudio de diseño gráfico, comunicación y mercadotecnia en la ciudad de San Pedro, Buenos Aires. Sección de Contacto.">
+    <meta name="description"
+        content="Somos un estudio de diseño gráfico, comunicación y mercadotecnia en la ciudad de San Pedro, Buenos Aires. Sección de Contacto.">
 </head>
 
 <body>
@@ -42,46 +51,52 @@
     </header>
 
     <!-- Contenido Principal -->
-    <main class="contato-main contenedor-maximo-desktop">
-        <section class="main-texto texto-introductorio">
-            <h2>Contacto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aspernatur ut perferendis ipsam est
-                omnis, incidunt porro sequi ratione laborum fugiat alias ullam necessitatibus eos itaque nihil debitis
-                autem rerum!</p>
-        </section>
+    <main>
 
-        <section class="contacto-mapa">
-            <iframe class="iframe-mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.389003930591!2d-59.674864024299715!3d-33.672990173302104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba22c6e89d907f%3A0x7b309fed679b3edb!2sEstudio%20Faraldo%20%26%20Asociados!5e0!3m2!1ses-419!2sar!4v1700858281540!5m2!1ses-419!2sar"
-                width="611" height="670" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
+        <div class="contenedor-maximo-desktop">
+            <section class="main-texto texto-introductorio">
+                <h2 class="animacion-2">Contacto</h2>
+                <p class="animacion-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aspernatur ut
+                    perferendis ipsam est
+                    omnis, incidunt porro sequi ratione laborum fugiat alias ullam necessitatibus eos itaque nihil
+                    debitis
+                    autem rerum!</p>
+            </section>
 
+            <article class="tarjeta">
+                <form class="contacto-formulario" action="">
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
 
-        <form class="contacto-formulario" action="">
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email">
-            </div>
+                    <div class="apellido">
+                        <label for="apellido"></label>
+                        <input type="text" id="apellido" placeholder="Apellido">
+                    </div>
 
-            <div>
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" placeholder="Apellido">
-            </div>
+                    <div class="nombre">
+                        <label for="nombre"></label>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </div>
 
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Nombre">
-            </div>
+                    <div class="consulta">
+                        <label for="consulta"></label>
+                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
+                    </div>
 
-            <div>
-                <label for="consulta">Consulta</label>
-                <textarea name="consulta" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
-            </div>
+                    <input class="enviar" type="submit" value="Enviar">
+                </form>
+                
+            </article>
 
-            <input class="contacto-enviar" type="submit" value="Enviar">
-        </form>
+        </div>
+
+        <iframe class="iframe-mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.389176297353!2d-59.67486402356766!3d-33.672985708944545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba22c6e89d907f%3A0x7b309fed679b3edb!2sEstudio%20Faraldo%20%26%20Asociados!5e0!3m2!1ses-419!2sar!4v1704778682179!5m2!1ses-419!2sar"
+            width="" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
 
     </main>
 
