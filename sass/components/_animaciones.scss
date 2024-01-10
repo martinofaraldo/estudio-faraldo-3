@@ -38,8 +38,9 @@
 
 // DETALLES
 .animacion-1:hover {
-   transform: rotate(1deg);
+    transform: rotate(1deg);
 }
+
 .animacion-1 {
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
@@ -47,9 +48,27 @@
 
 .animacion-2:hover {
     transform: rotate(-0.4deg);
- }
- .animacion-2 {
-     transition-duration: 0.2s;
-     transition-timing-function: ease-in-out;
- }
+}
 
+.animacion-2 {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+// imagenes
+.trabajos-proyecto-contenedor:hover {
+    filter: grayscale(0.5);
+}
+
+.trabajos-proyecto-contenedor {
+    filter: grayscale(0.9);
+}
+
+
+.servicios-prestacion-contenedor:hover {
+    filter: grayscale(0.5);
+}
+
+.servicios-prestacion-contenedor {
+    filter: grayscale(0.9);
+}

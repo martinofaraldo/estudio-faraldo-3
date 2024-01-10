@@ -25,7 +25,9 @@ header {
    height: 61px;
    justify-content: space-between;
 }
-
+.barra-de-navegacion-contenedor {
+   max-width: 100%;
+}
 .barra-de-navegacion {
    text-align: center;
    display: flex;
@@ -46,16 +48,6 @@ header {
    display: none;
 }
 
-.boton-busqueda input {
-   border-radius: 7px;
-   border: 0;
-}
-
-.boton-busqueda input::placeholder {
-   color: $color-primario;
-   position: absolute;
-   left: 10px;
-}
 
 // MEDIA QUERI DESCKTOP
 @media screen and (min-width: 1200px) {
@@ -90,5 +82,16 @@ header {
    .boton-busqueda {
       display: inline-block;
       margin-left: auto;
+   }
+
+   .boton-busqueda input {
+      color: white;
+      width: 165px;
+      font-family: $fuente-flex;
+      font-weight: 600;
+      background-color: rgb(22, 22, 22);
+      border: 2px solid rgb(97, 97, 97);
+      padding: 2px 5px;
+      padding-top: 3px;
    }
 }

@@ -28,6 +28,10 @@ main {
   margin-top: 81px;
 }
 
+p {
+  text-align: justify;
+}
+
 @media screen and (min-width: 1200px) {
   main {
     margin-top: 51px;
@@ -38,6 +42,74 @@ main {
     margin-right: auto;
   }
 }
+.barra-de-navegacion li a:hover {
+  text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.5), 0px -4px 6px rgba(255, 255, 255, 0.6);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.barra-de-navegacion li a {
+  transition-duration: 0.1s;
+}
+
+.barra-de-navegacion li a:active {
+  color: rgb(217, 217, 217);
+  text-shadow: 0px 4px 3px rgba(198, 198, 198, 0.5), 0px -4px 6px rgba(198, 198, 198, 0.6);
+}
+
+.footer-social li a:hover {
+  text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.733), 0px -4px 6px rgba(255, 255, 255, 0.782);
+}
+
+.footer-social li a {
+  transition-duration: 0.3s;
+}
+
+.index-imagen img:hover {
+  filter: invert(100%);
+  transform: rotatey(180deg) rotate(180deg);
+  transition-duration: 1.2s;
+}
+
+.index-imagen img {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.animacion-1:hover {
+  transform: rotate(1deg);
+}
+
+.animacion-1 {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.animacion-2:hover {
+  transform: rotate(-0.4deg);
+}
+
+.animacion-2 {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.trabajos-proyecto-contenedor:hover {
+  filter: grayscale(0.5);
+}
+
+.trabajos-proyecto-contenedor {
+  filter: grayscale(0.9);
+}
+
+.servicios-prestacion-contenedor:hover {
+  filter: grayscale(0.5);
+}
+
+.servicios-prestacion-contenedor {
+  filter: grayscale(0.9);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -66,6 +138,10 @@ header {
   justify-content: space-between;
 }
 
+.barra-de-navegacion-contenedor {
+  max-width: 100%;
+}
+
 .barra-de-navegacion {
   text-align: center;
   display: flex;
@@ -84,17 +160,6 @@ header {
 
 .boton-busqueda {
   display: none;
-}
-
-.boton-busqueda input {
-  border-radius: 7px;
-  border: 0;
-}
-
-.boton-busqueda input::placeholder {
-  color: #161616;
-  position: absolute;
-  left: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -125,6 +190,16 @@ header {
   .boton-busqueda {
     display: inline-block;
     margin-left: auto;
+  }
+  .boton-busqueda input {
+    color: white;
+    width: 165px;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 600;
+    background-color: rgb(22, 22, 22);
+    border: 2px solid rgb(97, 97, 97);
+    padding: 2px 5px;
+    padding-top: 3px;
   }
 }
 footer {
@@ -214,58 +289,6 @@ footer {
     padding: 1rem 0;
   }
 }
-.barra-de-navegacion li a:hover {
-  text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.5), 0px -4px 6px rgba(255, 255, 255, 0.6);
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-.barra-de-navegacion li a {
-  transition-duration: 0.1s;
-}
-
-.barra-de-navegacion li a:active {
-  color: rgb(217, 217, 217);
-  text-shadow: 0px 4px 3px rgba(198, 198, 198, 0.5), 0px -4px 6px rgba(198, 198, 198, 0.6);
-}
-
-.footer-social li a:hover {
-  text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.733), 0px -4px 6px rgba(255, 255, 255, 0.782);
-}
-
-.footer-social li a {
-  transition-duration: 0.3s;
-}
-
-.index-imagen img:hover {
-  filter: invert(100%);
-  transform: rotatey(180deg) rotate(180deg);
-  transition-duration: 1.2s;
-}
-
-.index-imagen img {
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0.2s;
-}
-
-.animacion-1:hover {
-  transform: rotate(1deg);
-}
-
-.animacion-1 {
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-.animacion-2:hover {
-  transform: rotate(-0.4deg);
-}
-
-.animacion-2 {
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
 .index-main {
   display: grid;
   grid-template-columns: 1fr;
@@ -315,6 +338,10 @@ footer {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
+  .index-texto {
+    align-self: normal;
+    margin-top: 4rem;
+  }
   .index-imagen {
     margin-top: 4px;
   }
@@ -355,8 +382,8 @@ footer {
     box-shadow: -3px 3px 10px 5px rgb(213, 213, 213);
   }
   .servicios-prestacion-parrafo {
-    padding-left: 10px;
-    padding-right: 3rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
     margin-top: 3rem;
   }
 }
@@ -392,8 +419,8 @@ footer {
     box-shadow: -3px 3px 10px 5px rgb(213, 213, 213);
   }
   .trabajos-proyecto-parrafo {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
 }
 .clientes-logo-contenedor {
