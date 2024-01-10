@@ -5,6 +5,7 @@
     <meta charset="UF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Primary Meta Tags -->
     <title>Estudio Faraldo</title>
     <meta name="title" content="Estudio Faraldo" />
@@ -76,7 +77,8 @@
             <img src="./img/imagen-index.png"
                 alt="Imagen artistica de un pasillo visto en perspectiva de un punto de fuga y en blanco y negro">
         </div>
-        <article class="index-texto">
+        <article data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"
+            class="index-texto">
             <h3 class="que-hacemos animacion-1">¿Qué hacemos?</h3>
             <h2 class="index-titulo animacion-1">Diseño gráfico, consultora en comunicación visual y mercadotecnia.</h2>
             <p class="animacion-1">Somos un equipo dedicado a ofrecer soluciones en comunicación visual para empresas,
@@ -118,6 +120,12 @@
         <p class="copiright contenedor-maximo-desktop">&copy; 2024 Martino Faraldo | Todos los derechos reservados</p>
     </footer>
 
+    <!-- Librerias de java script -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

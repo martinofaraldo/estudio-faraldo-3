@@ -5,6 +5,7 @@
     <meta charset="UF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Primary Meta Tags -->
     <title>Estudio Faraldo</title>
     <meta name="title" content="Estudio Faraldo" />
@@ -71,7 +72,7 @@
     <main>
 
         <div class="contenedor-maximo-desktop">
-            <section class="main-texto texto-introductorio">
+            <section data-aos="fade-right" class="main-texto texto-introductorio">
                 <h2 class="animacion-2">Contacto</h2>
                 <p class="animacion-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aspernatur ut
                     perferendis ipsam est
@@ -80,7 +81,7 @@
                     autem rerum!</p>
             </section>
 
-            <article class="tarjeta">
+            <article data-aos="flip-up" class="tarjeta">
                 <form class="contacto-formulario" action="">
                     <div class="email">
                         <label for="email"></label>
@@ -104,7 +105,7 @@
 
                     <input class="enviar" type="submit" value="Enviar">
                 </form>
-                
+
             </article>
 
         </div>
@@ -142,6 +143,12 @@
         <p class="copiright contenedor-maximo-desktop">&copy; 2024 Martino Faraldo | Todos los derechos reservados</p>
     </footer>
 
+    <!-- Librerias de java script -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
