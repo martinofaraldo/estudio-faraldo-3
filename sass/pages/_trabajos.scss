@@ -2,6 +2,13 @@
     padding: 10px;
     font-size: small;
     margin: 10px 0;
+    display: grid;
+}
+
+.trabajos-proyecto-parrafo {
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .trabajos-proyecto-parrafo h3 {
@@ -15,12 +22,17 @@
     font-size: 0.9rem;
 }
 
+.trabajos-proyecto-contenedor img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 // MEDIA QUERI DESCKTOP
 @media screen and (min-width: 1200px) {
     .trabajos-proyecto-contenedor {
-        background: rgb(255,255,255);
-        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(212,212,212,0.5) 67%, rgba(255,255,255,1) 100%);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 0.5) 67%, rgba(255, 255, 255, 1) 100%);
         padding: 0;
         margin: 20px 0;
         display: grid;

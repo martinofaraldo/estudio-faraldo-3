@@ -61,7 +61,7 @@
 }
 
 .trabajos-proyecto-contenedor {
-    filter: grayscale(0.9);
+    filter: grayscale(1);
 }
 
 
@@ -70,7 +70,7 @@
 }
 
 .servicios-prestacion-contenedor {
-    filter: grayscale(0.9);
+    filter: grayscale(1);
 }
 
 // Logos
@@ -80,4 +80,9 @@
 
 .clientes-logo-contenedor li {
     filter: grayscale(1) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.829));
+}
+
+.tarjeta:hover {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(172, 190, 219, 0.231) 100%);
 }

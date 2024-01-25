@@ -28,10 +28,6 @@ main {
   margin-top: 81px;
 }
 
-p {
-  text-align: justify;
-}
-
 @media screen and (min-width: 1200px) {
   main {
     margin-top: 51px;
@@ -40,6 +36,9 @@ p {
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
+  }
+  p {
+    text-align: justify;
   }
 }
 .barra-de-navegacion li a:hover {
@@ -99,7 +98,7 @@ p {
 }
 
 .trabajos-proyecto-contenedor {
-  filter: grayscale(0.9);
+  filter: grayscale(1);
 }
 
 .servicios-prestacion-contenedor:hover {
@@ -107,7 +106,7 @@ p {
 }
 
 .servicios-prestacion-contenedor {
-  filter: grayscale(0.9);
+  filter: grayscale(1);
 }
 
 .clientes-logo-contenedor li:hover {
@@ -116,6 +115,11 @@ p {
 
 .clientes-logo-contenedor li {
   filter: grayscale(1) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.829));
+}
+
+.tarjeta:hover {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(172, 190, 219, 0.231) 100%);
 }
 
 header {
@@ -360,6 +364,12 @@ footer {
     box-shadow: -4px 2px 20px rgba(0, 0, 0, 0.223);
   }
 }
+.servicios-prestacion-parrafo {
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .servicios-prestacion-parrafo p {
   font-family: "Roboto Mono", sans-serif;
   font-size: 0.9rem;
@@ -375,6 +385,12 @@ footer {
   margin: 10px 0;
   padding: 10px;
   font-size: small;
+  display: grid;
+}
+
+.servicios-prestacion-contenedor img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -399,6 +415,13 @@ footer {
   padding: 10px;
   font-size: small;
   margin: 10px 0;
+  display: grid;
+}
+
+.trabajos-proyecto-parrafo {
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .trabajos-proyecto-parrafo h3 {
@@ -410,6 +433,11 @@ footer {
 .trabajos-proyecto-parrafo p {
   font-family: "Roboto Mono", sans-serif;
   font-size: 0.9rem;
+}
+
+.trabajos-proyecto-contenedor img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -478,6 +506,13 @@ footer {
   margin-left: auto;
 }
 
+.contacto-formulario h3 {
+  font-family: "Roboto Flex", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
 .tarjeta form div textarea {
   font-family: "Roboto Flex", sans-serif;
   padding: 10px;
@@ -485,6 +520,7 @@ footer {
   border-radius: 5px;
   width: 100%;
   height: 250px;
+  resize: none;
 }
 
 .tarjeta form div input {
@@ -537,6 +573,7 @@ footer {
     max-width: 610px;
     gap: 1rem;
     margin: 3rem;
+    margin-top: 2rem;
     margin-right: auto;
     margin-left: auto;
   }

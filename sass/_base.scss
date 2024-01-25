@@ -45,9 +45,7 @@ main {
    margin-top: 81px;
 }
 
-p {
-   text-align: justify;
- }
+
 
 
 
@@ -61,6 +59,10 @@ p {
       max-width: 1220px;
       margin-left: auto;
       margin-right: auto;
+   }
+
+   p {
+      text-align: justify;
    }
 
 }

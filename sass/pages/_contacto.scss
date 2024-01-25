@@ -22,7 +22,13 @@
    margin: 0.5rem;
    margin-right: auto;
    margin-left: auto;
+}
 
+.contacto-formulario h3 {
+   font-family: $fuente-flex;
+   color: rgb(0, 0, 0);
+   font-weight: 500;
+   font-size: 1rem;
 }
 
 .tarjeta form div textarea {
@@ -32,6 +38,7 @@
    border-radius: 5px;
    width: 100%;
    height: 250px;
+   resize: none;
 
 }
 
@@ -91,6 +98,7 @@
       max-width: 610px;
       gap: 1rem;
       margin: 3rem;
+      margin-top: 2rem;
       margin-right: auto;
       margin-left: auto;
 
