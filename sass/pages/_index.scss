@@ -8,6 +8,7 @@
    max-width: 610px;
    margin-left: auto;
    margin-right: auto;
+   order: 2;
 }
 
 .index-imagen img {
@@ -52,10 +53,12 @@
    .index-texto {
       align-self: normal;
       margin-top: 4rem;
+      order: 2;
    }
 
    .index-imagen {
       margin-top: 4px;
+      order: 1;
    }
 
    .index-imagen img {

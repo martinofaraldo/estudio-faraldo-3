@@ -7,6 +7,7 @@
 .servicios-prestacion-parrafo p {
     font-family: $fuente-mono;
     font-size: 0.9rem;
+    margin: 0.5rem 0;
 }
 .servicios-prestacion-parrafo h3 {
     font-family: $fuente-serif;
@@ -29,20 +30,21 @@
 // MEDIA QUERI DESCKTOP
 @media screen and (min-width: 1200px) {
     .servicios-prestacion-contenedor {
-        background-color: white;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 0.5) 67%, rgba(255, 255, 255, 1) 100%);
         padding: 0;
         margin: 20px 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border: 1px solid rgb(201, 201, 201);
+        align-items: center;
         border-radius: 5px;
         overflow: hidden;
+        border: 1px solid rgb(218, 218, 218);
         box-shadow: -3px 3px 10px 5px rgb(213, 213, 213);
     }
 
     .servicios-prestacion-parrafo {
         padding-left: 1.6rem;
         padding-right: 1.6rem;
-        margin-top: 3rem;
     }
 }
