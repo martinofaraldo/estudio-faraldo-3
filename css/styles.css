@@ -371,6 +371,7 @@ footer {
   max-width: 610px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.5rem;
 }
 
 .servicios-prestacion-parrafo p {
@@ -414,6 +415,7 @@ footer {
   .servicios-prestacion-parrafo {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
+    margin-top: 0;
   }
 }
 .trabajos-proyecto-contenedor {
@@ -427,6 +429,7 @@ footer {
   max-width: 610px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.5rem;
 }
 
 .trabajos-proyecto-parrafo h3 {
@@ -463,6 +466,7 @@ footer {
   .trabajos-proyecto-parrafo {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
+    margin-top: 0;
   }
 }
 .clientes-logo-contenedor {
