@@ -55,24 +55,6 @@
     transition-timing-function: ease-in-out;
 }
 
-// imagenes
-.trabajos-proyecto-contenedor:hover {
-    filter: grayscale(0.2);
-}
-
-.trabajos-proyecto-contenedor {
-    filter: grayscale(1);
-}
-
-
-.servicios-prestacion-contenedor:hover {
-    filter: grayscale(0.2);
-}
-
-.servicios-prestacion-contenedor {
-    filter: grayscale(1);
-}
-
 // Logos
 .clientes-logo-contenedor li:hover {
     filter: grayscale(0) drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.829));
@@ -85,4 +67,26 @@
 .tarjeta:hover {
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(172, 190, 219, 0.231) 100%);
+}
+
+// MEDIA QUERI DESCKTOP
+@media screen and (min-width: 1200px) {
+
+    // imagenes proyectos
+    .trabajos-proyecto-contenedor:hover {
+        filter: grayscale(0.2);
+    }
+
+    .trabajos-proyecto-contenedor {
+        filter: grayscale(1);
+    }
+
+    // imaganes servicios
+    .servicios-prestacion-contenedor:hover {
+        filter: grayscale(0.2);
+    }
+
+    .servicios-prestacion-contenedor {
+        filter: grayscale(1);
+    }
 }
