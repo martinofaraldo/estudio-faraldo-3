@@ -82,29 +82,34 @@
 
             <article data-aos="fade-up" class="tarjeta">
 
-                <form class="contacto-formulario" action="">
-                    <h3>Escribinos :)</h3>
+                <form class="contacto-formulario" method="post" name="miformulario" netlify>
+                    <h3>Dejanos un mensaje y te contactaremos.</h3>
                     <div class="email">
                         <label for="email"></label>
-                        <input type="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email">
                     </div>
 
                     <div class="apellido">
                         <label for="apellido"></label>
-                        <input type="text" id="apellido" placeholder="Apellido">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                     </div>
 
                     <div class="nombre">
                         <label for="nombre"></label>
-                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
+
+                    <div class="telefono">
+                        <label for="telefono"></label>
+                        <input type="number" name="telefono" id="telefono" placeholder="Telefono">
                     </div>
 
                     <div class="consulta">
                         <label for="consulta"></label>
-                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta"></textarea>
                     </div>
 
-                    <input class="enviar" type="submit" value="Enviar">
+                    <input class="enviar" type="submit" name="enviar" id="enviar" value="Enviar">
                 </form>
 
             </article>

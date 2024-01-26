@@ -572,6 +572,14 @@ footer {
   grid-column: span 2;
 }
 
+.telefono {
+  grid-column: span 2;
+}
+
+.contacto-formulario h3 {
+  grid-column: span 2;
+}
+
 @media screen and (min-width: 1200px) {
   .iframe-mapa {
     width: 100%;
