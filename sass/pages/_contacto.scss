@@ -31,7 +31,7 @@
    font-size: 1rem;
 }
 
-.tarjeta form div textarea {
+.tarjeta form p textarea {
    font-family: $fuente-flex;
    padding: 10px;
    border: 1px solid rgb(218, 218, 218);
@@ -42,7 +42,7 @@
 
 }
 
-.tarjeta form div input {
+.tarjeta form p input {
    font-family: $fuente-flex;
    padding: 10px;
    border: 1px solid rgb(218, 218, 218);
@@ -51,11 +51,14 @@
 
 }
 
+.enviar-contenedor {
+   grid-column: span 2;
+}
+
 .enviar {
    color: white;
    background: rgb(0, 0, 0);
    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(28, 28, 28, 1) 100%);
-   grid-column: span 2;
    font-family: $fuente-flex;
    padding: 10px;
    border: 1px solid rgb(218, 218, 218);
@@ -112,7 +115,7 @@
 
    }
 
-   .tarjeta form div textarea {
+   .tarjeta form p textarea {
       font-family: $fuente-flex;
       padding: 10px;
       border: 1px solid rgb(218, 218, 218);
@@ -122,7 +125,7 @@
 
    }
 
-   .tarjeta form div input {
+   .tarjeta form p input {
       font-family: $fuente-flex;
       padding: 10px;
       border: 1px solid rgb(218, 218, 218);

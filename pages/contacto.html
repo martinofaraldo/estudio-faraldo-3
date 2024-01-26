@@ -76,40 +76,42 @@
             <section data-aos="fade-up" class="main-texto texto-introductorio">
                 <h2 class="animacion-2">Contacto</h2>
                 <p class="animacion-2">¿Tenés un proyecto para desarrollar o necesitás asesoramiento? Estamos acá para
-                    trabajar con tu desafío y dar vida a tus ideas. ¡Completá el formulario para que nos pongamos en contacto y
+                    trabajar con tu desafío y dar vida a tus ideas. ¡Completá el formulario para que nos pongamos en
+                    contacto y
                     empecemos a crear algo genial juntos!</p>
             </section>
 
             <article data-aos="fade-up" class="tarjeta">
 
-                <form class="contacto-formulario" method="post" name="miformulario" netlify>
+                <form class="contacto-formulario" method="post" name="miformulario" data-netlify="true">
                     <h3>Dejanos un mensaje y te contactaremos.</h3>
-                    <div class="email">
+                    <p class="email">
                         <label for="email"></label>
                         <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
+                    </p>
 
-                    <div class="apellido">
+                    <p class="apellido">
                         <label for="apellido"></label>
                         <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-                    </div>
+                    </p>
 
-                    <div class="nombre">
+                    <p class="nombre">
                         <label for="nombre"></label>
                         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    </div>
+                    </p>
 
-                    <div class="telefono">
+                    <p class="telefono">
                         <label for="telefono"></label>
                         <input type="number" name="telefono" id="telefono" placeholder="Telefono">
-                    </div>
+                    </p>
 
-                    <div class="consulta">
+                    <p class="consulta">
                         <label for="consulta"></label>
                         <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta"></textarea>
-                    </div>
-
-                    <input class="enviar" type="submit" name="enviar" id="enviar" value="Enviar">
+                    </p>
+                    <p class="enviar-contenedor">
+                        <input class="enviar" type="submit" name="enviar" id="enviar" value="Enviar">
+                    </p>
                 </form>
 
             </article>

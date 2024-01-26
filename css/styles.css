@@ -535,7 +535,7 @@ footer {
   font-size: 1rem;
 }
 
-.tarjeta form div textarea {
+.tarjeta form p textarea {
   font-family: "Roboto Flex", sans-serif;
   padding: 10px;
   border: 1px solid rgb(218, 218, 218);
@@ -545,7 +545,7 @@ footer {
   resize: none;
 }
 
-.tarjeta form div input {
+.tarjeta form p input {
   font-family: "Roboto Flex", sans-serif;
   padding: 10px;
   border: 1px solid rgb(218, 218, 218);
@@ -553,11 +553,14 @@ footer {
   width: 100%;
 }
 
+.enviar-contenedor {
+  grid-column: span 2;
+}
+
 .enviar {
   color: white;
   background: rgb(0, 0, 0);
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(28, 28, 28) 100%);
-  grid-column: span 2;
   font-family: "Roboto Flex", sans-serif;
   padding: 10px;
   border: 1px solid rgb(218, 218, 218);
@@ -607,7 +610,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
-  .tarjeta form div textarea {
+  .tarjeta form p textarea {
     font-family: "Roboto Flex", sans-serif;
     padding: 10px;
     border: 1px solid rgb(218, 218, 218);
@@ -615,7 +618,7 @@ footer {
     width: 100%;
     height: 250px;
   }
-  .tarjeta form div input {
+  .tarjeta form p input {
     font-family: "Roboto Flex", sans-serif;
     padding: 10px;
     border: 1px solid rgb(218, 218, 218);
