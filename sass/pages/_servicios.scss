@@ -10,6 +10,7 @@
     font-size: 0.9rem;
     margin: 0.5rem 0;
 }
+
 .servicios-prestacion-parrafo h3 {
     font-family: $fuente-serif;
     font-size: 2rem;
@@ -26,6 +27,20 @@
 .servicios-prestacion-contenedor img {
     margin-left: auto;
     margin-right: auto;
+}
+
+.boton-solicitar {
+    color: white;
+    background-color: rgb(35, 35, 35);
+    font-family: $fuente-flex;
+    font-weight: 400;
+    padding: 8px 15px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 6px;
+}
+
+.solicitar {
+    margin-top: 2rem;
 }
 
 // MEDIA QUERI DESCKTOP

@@ -398,6 +398,20 @@ footer {
   margin-right: auto;
 }
 
+.boton-solicitar {
+  color: white;
+  background-color: rgb(35, 35, 35);
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  padding: 8px 15px;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 6px;
+}
+
+.solicitar {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 1200px) {
   .servicios-prestacion-contenedor {
     background: rgb(255, 255, 255);
@@ -471,7 +485,7 @@ footer {
 }
 .clientes-logo-contenedor {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 25px;
   margin-left: 10px;
